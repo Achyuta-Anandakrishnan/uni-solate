@@ -24,7 +24,8 @@ targets:
         excludes:
           - Resources/Preview Content/**
     resources:
-      - UnIsolate/Resources
+      - UnIsolate/Resources/Assets.xcassets
+      - "UnIsolate/Resources/Preview Content/Preview Assets.xcassets"
     settings:
       base:
         PRODUCT_NAME: un-isolate

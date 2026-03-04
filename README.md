@@ -68,3 +68,7 @@ Also included for regeneration:
 3. Tap **Import .ics File** on the import step.
 4. Select your file in the document picker.
 5. Confirm the message `Imported X schedule items.` and preview rows appear.
+
+### If you previously saw `Multiple commands produce ... un-isolate.app/Contents.json`
+
+That was caused by accidentally bundling asset-catalog `Contents.json` files as plain resources. The committed `uni-solate.xcodeproj` is now fixed to bundle the `.xcassets` catalogs correctly. Pull latest and reopen the project.

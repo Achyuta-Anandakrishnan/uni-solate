@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6B1AA111111111111111111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1AA222222222222222222 /* Assets.xcassets */; };
+		B6B1AA333333333333333333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1AA444444444444444444 /* Preview Assets.xcassets */; };
 		AA0228E3A18C6C5438F924C0 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70215A587FA36603C65D38AA /* Attendance.swift */; };
 		093C79FB6FD80B43CC97AA0A /* BusyBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC8153A8141E2E6405873A /* BusyBlock.swift */; };
 		AE262194497D34814292319A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A546F360DC0930AA4FC5F /* Event.swift */; };
@@ -39,10 +41,6 @@
 		4E3AEF26025D281DA3681DF2 /* ColorTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C08AF396D8DDD4AD835D3F /* ColorTokens.swift */; };
 		0584702257B06E954CE1F1BF /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC34142EB4C6347CEE6B014 /* Typography.swift */; };
 		768721CCC7D0B687F31A25BF /* UnIsolateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1677DB7A8785FE319FED8E /* UnIsolateApp.swift */; };
-		21CD2F0871275C645C767276 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 08814864DD43F86C8AD2A67B /* Contents.json */; };
-		7DE28D6C4946D4BF274A506A /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1649D2D8E96E242166DD23 /* Contents.json */; };
-		8953F64538B7664063941753 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 841A26E69240B777732302EC /* Contents.json */; };
-		49021403427363757DADFE7B /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = D52B5A4E6BE5DAC5D8171663 /* Contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +76,8 @@
 		42C08AF396D8DDD4AD835D3F /* ColorTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnIsolate/UI/Theme/ColorTokens.swift"; sourceTree = "<group>"; };
 		8AC34142EB4C6347CEE6B014 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnIsolate/UI/Theme/Typography.swift"; sourceTree = "<group>"; };
 		ED1677DB7A8785FE319FED8E /* UnIsolateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnIsolate/UnIsolateApp.swift"; sourceTree = "<group>"; };
+		B6B1AA222222222222222222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "UnIsolate/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		B6B1AA444444444444444444 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "UnIsolate/Resources/Preview Content/Preview Assets.xcassets"; sourceTree = "<group>"; };
 		08814864DD43F86C8AD2A67B /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "UnIsolate/Resources/Assets.xcassets/AccentColor.colorset/Contents.json"; sourceTree = "<group>"; };
 		9A1649D2D8E96E242166DD23 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "UnIsolate/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json"; sourceTree = "<group>"; };
 		841A26E69240B777732302EC /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "UnIsolate/Resources/Assets.xcassets/Contents.json"; sourceTree = "<group>"; };
@@ -203,10 +203,8 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		285BB1C1430063331E9F5DD0 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (
-				21CD2F0871275C645C767276 /* Contents.json in Resources */,
-				7DE28D6C4946D4BF274A506A /* Contents.json in Resources */,
-				8953F64538B7664063941753 /* Contents.json in Resources */,
-				49021403427363757DADFE7B /* Contents.json in Resources */,
+				B6B1AA111111111111111111 /* Assets.xcassets in Resources */,
+				B6B1AA333333333333333333 /* Preview Assets.xcassets in Resources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXResourcesBuildPhase section */
 
