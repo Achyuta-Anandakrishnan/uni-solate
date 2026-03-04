@@ -247,13 +247,11 @@
 
 /* Begin XCBuildConfiguration section */
 		DCFB30EAE59D6917CE906371 = {isa = XCBuildConfiguration; buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+								IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				SWIFT_VERSION = 5.9;
 			}; name = Debug; };
 		37CDDD61FED8A39EEA88C0F9 = {isa = XCBuildConfiguration; buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+								IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				SWIFT_VERSION = 5.9;
 			}; name = Release; };
 		331C5106741EE8E14B752D88 = {isa = XCBuildConfiguration; buildSettings = {

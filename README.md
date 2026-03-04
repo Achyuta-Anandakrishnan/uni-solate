@@ -77,7 +77,7 @@ That was caused by accidentally bundling asset-catalog `Contents.json` files as 
 ### Common Xcode build issues (fixed in repo)
 
 - **Missing input files with repeated paths** (e.g. `UnIsolate/UnIsolate/...`): this was caused by bad `.pbxproj` path nesting and is fixed in the committed `uni-solate.xcodeproj`.
-- **`None of the input catalogs contained ... AppIcon`**: asset catalogs are now wired as `.xcassets` resources (not individual `Contents.json` files).
+- **`None of the input catalogs contained ... AppIcon`**: this repo now removes the hard `ASSETCATALOG_COMPILER_APPICON_NAME` requirement for local builds, so placeholder catalogs no longer fail compilation.
 - **`Signing for "un-isolate" requires a development team`**: project build settings now disable required code signing for local debug builds so simulator builds work without selecting a team.
 
 If you still see old errors, close Xcode, run `Product > Clean Build Folder`, then reopen `uni-solate.xcodeproj`.
