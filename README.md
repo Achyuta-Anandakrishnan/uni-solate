@@ -1,6 +1,6 @@
 # un-isolate (SwiftUI + SwiftData)
 
-un-isolate is a local-first iOS MVP designed to reduce undergraduate social isolation by helping students discover organizations, import their schedules, and commit to events that fit free time windows.
+un-isolate is a local-first iOS MVP designed to reduce undergraduate social isolation by helping students discover organizations, import schedules, and commit to events that fit free time windows.
 
 ## What is implemented
 
@@ -20,13 +20,35 @@ un-isolate is a local-first iOS MVP designed to reduce undergraduate social isol
 - 5 tabs: Dashboard, Plan, Discover, Directory, Profile
 - Persistent "I'm going" and buddy intent with haptics
 
-## Run in Xcode
+## Full iOS app project files included
 
-1. Create a new **iOS App** project in Xcode named `un-isolate` (SwiftUI + SwiftData).
+This repo now includes the missing project scaffolding pieces:
+
+- `project.yml` (XcodeGen spec)
+- `Config/Info.plist`
+- `UnIsolate/Resources/Assets.xcassets` (AccentColor + AppIcon set placeholders)
+- `UnIsolate/Resources/Preview Content/Preview Assets.xcassets`
+- `scripts/bootstrap_xcode_project.sh`
+
+## Run in Xcode (fast path)
+
+1. Install XcodeGen once:
+   ```bash
+   brew install xcodegen
+   ```
+2. From repo root, generate the project:
+   ```bash
+   ./scripts/bootstrap_xcode_project.sh
+   ```
+3. Open `un-isolate.xcodeproj` in Xcode.
+4. Select an iOS simulator (e.g. iPhone 15) and run.
+
+## Alternative run path (no XcodeGen)
+
+1. Create a new **iOS App** project in Xcode named `un-isolate`.
 2. Replace generated files with this repository's `UnIsolate` folder contents.
 3. Ensure deployment target is **iOS 17.0+** and Swift is **5.9+**.
-4. Add an `AccentColor` asset (soft coral/red) in `Assets.xcassets`.
-5. Build and run in the iOS simulator.
+4. Build and run in the iOS simulator.
 
 ## Testing ICS import in Simulator
 
