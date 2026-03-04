@@ -1,29 +1,37 @@
-# CampusPulse (SwiftUI + SwiftData)
+# un-isolate (SwiftUI + SwiftData)
 
-CampusPulse is a local-first iOS MVP focused on reducing student isolation by recommending schedule-fit campus events and making organizations easy to find.
+un-isolate is a local-first iOS MVP designed to reduce undergraduate social isolation by helping students discover organizations, import their schedules, and commit to events that fit free time windows.
 
-## Project Structure
+## What is implemented
 
-- `CampusPulse/CampusPulseApp.swift`
-- `CampusPulse/Models/*`
-- `CampusPulse/Services/*`
-- `CampusPulse/UI/Theme/*`
-- `CampusPulse/UI/Components/*`
-- `CampusPulse/UI/Onboarding/*`
-- `CampusPulse/UI/Tabs/*`
-- `CampusPulse/UI/Detail/*`
+- SwiftData local models: `UserProfile`, `BusyBlock`, `Organization`, `Event`, `Attendance`
+- First-launch onboarding flow with:
+  - Welcome
+  - School + `.edu` email
+  - ICS schedule import + preview
+  - Interest chips
+  - Lifestyle signals (steps/sleep + nearby schools toggle)
+  - Isolation survey
+  - Finish screen
+- Free-time window engine (08:00–22:00 over 7 days)
+- Isolation risk scoring (0–100) with labels + drivers
+- Recommendation scoring and ranking with schedule-fit + reasons
+- Seed dataset (36 upcoming events in next 14 days across NC State, UNC, Duke)
+- 5 tabs: Dashboard, Plan, Discover, Directory, Profile
+- Persistent "I'm going" and buddy intent with haptics
 
 ## Run in Xcode
 
-1. Create a new **iOS App** project in Xcode named `CampusPulse` (SwiftUI + SwiftData).
-2. Replace generated files with this repository's `CampusPulse` folder contents.
+1. Create a new **iOS App** project in Xcode named `un-isolate` (SwiftUI + SwiftData).
+2. Replace generated files with this repository's `UnIsolate` folder contents.
 3. Ensure deployment target is **iOS 17.0+** and Swift is **5.9+**.
 4. Add an `AccentColor` asset (soft coral/red) in `Assets.xcassets`.
-5. Build and run in simulator.
+5. Build and run in the iOS simulator.
 
 ## Testing ICS import in Simulator
 
-1. Create a local `.ics` file on your Mac, for example:
+1. Create a local `.ics` file on your Mac:
+
    ```ics
    BEGIN:VCALENDAR
    BEGIN:VEVENT
@@ -33,11 +41,8 @@ CampusPulse is a local-first iOS MVP focused on reducing student isolation by re
    END:VEVENT
    END:VCALENDAR
    ```
-2. Run onboarding and open **Import .ics File**.
-3. Select the file via Files picker.
-4. Confirm message: `Imported X schedule items.` and preview lines.
 
-## Notes
-
-- Seed service inserts 36 events over the next 14 days across NC State, UNC, and Duke.
-- Recommendation engine blends schedule fit, interest overlap, promoted flags, and risk-driven adjustments.
+2. Launch un-isolate and walk through onboarding.
+3. Tap **Import .ics File** on the import step.
+4. Select your file in the document picker.
+5. Confirm the message `Imported X schedule items.` and preview rows appear.
