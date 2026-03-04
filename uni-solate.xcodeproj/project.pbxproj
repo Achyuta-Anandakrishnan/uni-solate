@@ -258,6 +258,8 @@
 			}; name = Release; };
 		331C5106741EE8E14B752D88 = {isa = XCBuildConfiguration; buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Config/Info.plist;
@@ -275,6 +277,8 @@
 			}; name = Debug; };
 		256639833029BCA847F093AE = {isa = XCBuildConfiguration; buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Config/Info.plist;

@@ -72,3 +72,12 @@ Also included for regeneration:
 ### If you previously saw `Multiple commands produce ... un-isolate.app/Contents.json`
 
 That was caused by accidentally bundling asset-catalog `Contents.json` files as plain resources. The committed `uni-solate.xcodeproj` is now fixed to bundle the `.xcassets` catalogs correctly. Pull latest and reopen the project.
+
+
+### Common Xcode build issues (fixed in repo)
+
+- **Missing input files with repeated paths** (e.g. `UnIsolate/UnIsolate/...`): this was caused by bad `.pbxproj` path nesting and is fixed in the committed `uni-solate.xcodeproj`.
+- **`None of the input catalogs contained ... AppIcon`**: asset catalogs are now wired as `.xcassets` resources (not individual `Contents.json` files).
+- **`Signing for "un-isolate" requires a development team`**: project build settings now disable required code signing for local debug builds so simulator builds work without selecting a team.
+
+If you still see old errors, close Xcode, run `Product > Clean Build Folder`, then reopen `uni-solate.xcodeproj`.

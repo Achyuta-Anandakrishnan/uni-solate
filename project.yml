@@ -29,6 +29,8 @@ targets:
     settings:
       base:
         PRODUCT_NAME: un-isolate
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
         TARGETED_DEVICE_FAMILY: 1
         DEVELOPMENT_ASSET_PATHS: "\"UnIsolate/Resources/Preview Content\""
         ENABLE_PREVIEWS: YES
